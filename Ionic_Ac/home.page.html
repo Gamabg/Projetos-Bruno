@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Conversor de Temperatura
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input [(ngModel)]="dolares" label="Valor em Dólares" labelPlacement="floating"
+      placeholder="Valor da doação em dólares"></ion-input>
+  </ion-item>
+  <ion-button (click)="converter()" expand="block">Converter</ion-button>
+  <ion-label>{{temp}}</ion-label>
+</ion-content>
